@@ -1,3 +1,13 @@
+<script setup>
+   
+   import Header from '@/components/Header.vue'
+   import SearchBar from '@/components/SearchBar.vue'
+   
+</script>
+
 <template>
-	<h1 class="text-green-300">Home</h1>
+	<!-- This is Header -->
+	<Header></Header>
+	<!-- This is SearchBar -->
+	<SearchBar></SearchBar>
 </template>
