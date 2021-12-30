@@ -1,5 +1,5 @@
 <template>
-   <section class="mb-5 w-full flex justify-between">
+   <section class="mb-8 w-full flex justify-between">
       <!-- Greetings -->
       <div class="font-medium">
          <p class="text-xs">Hi, Windy 👏🏻</p>
