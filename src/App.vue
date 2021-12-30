@@ -7,7 +7,7 @@
 <style scoped>
    
    .app {
-      @apply p-5 w-full h-screen bg-gray-50;
+      @apply p-5 w-full h-screen bg-white;
    }
    
 </style>

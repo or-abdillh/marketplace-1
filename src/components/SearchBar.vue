@@ -1,5 +1,5 @@
 <template>
-   <section class="flex gap-2">
+   <section class="flex gap-2 mb-6">
       <input class="search-bar" type="search" name="search" id="search" placeholder="Find your shoes here" />
       <button type="button" class="w-2/12 rounded-lg bg-gray-900 text-gray-50 p-1">
          <i class="fa fa-search"></i>
