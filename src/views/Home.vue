@@ -1,6 +1,7 @@
 <script setup>
    
    import { ref } from 'vue'
+   import Navbar from '@/components/Navbar.vue'   
    import Header from '@/components/Header.vue'
    import SearchBar from '@/components/SearchBar.vue'
    import Badge from '@/components/Badge.vue'
@@ -29,10 +30,13 @@
 	
 	<!-- Render CardProduct 8 times -->
 	<section class="flex flex-wrap gap-4 justify-between">
-	   <template v-for="card in 8" :key="card">
+	   <template v-for="card in 10" :key="card">
 	      <CardProduct />
 	   </template>
 	</section>
+	
+	<!-- This is Navbar -->
+	<Navbar></Navbar>
 </template>
 
 <style scoped>
