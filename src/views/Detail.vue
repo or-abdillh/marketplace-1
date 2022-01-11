@@ -3,6 +3,8 @@
   import { useRouter } from 'vue-router'
   import Caraousel from '@/components/Caraousel.vue'
   import PriceTitle from '@/components/PriceTitle.vue'
+  import Section from '@/components/Section.vue'
+  import Select from '@/components/Select.vue'
   
   //Instance
   const router = useRouter()
@@ -10,6 +12,12 @@
   //Heart handler
   const isHeartClicked = ref(false)
   
+  //Colors
+  const colors = ['bg-gray-800', 'bg-yellow-600', 'bg-red-700', 'bg-blue-800']
+  
+  //Options
+  const options = ['43', '40', '38']
+      
   //Images
   const images = [
       { src: 'shoes.png', alt: 'Shoes' },
@@ -37,4 +45,31 @@
     prefix="$" 
     rating="4.5" 
     review="15" />
+    
+  <!-- Detail -->
+  <Section title="Details">
+    <template v-slot:body>
+      <p class="text-xs text-gray-600">
+        Lorem ipsum dolor sit amet ipsum cin attus lorem ipsum sit amet dolor
+      </p>
+    </template>
+  </Section>
+  
+  <!-- Color -->
+  <Section title="Colors">
+    <template v-slot:body>
+      <div class="flex gap-2">
+        <template v-for="(color, index) in colors" :key="index">
+          <div :class="color" class="rounded p-2 border border-gray-50 border-2"></div>
+        </template>
+      </div>
+    </template>
+  </Section>
+  
+  <!-- Size -->
+  <Section title="Size">
+    <template v-slot:body>
+      <Select name="size" :options="options" />
+    </template>
+  </Section>
 </template>
