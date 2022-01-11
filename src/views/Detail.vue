@@ -2,6 +2,7 @@
   import { ref } from 'vue'
   import { useRouter } from 'vue-router'
   import Caraousel from '@/components/Caraousel.vue'
+  import PriceTitle from '@/components/PriceTitle.vue'
   
   //Instance
   const router = useRouter()
@@ -27,5 +28,13 @@
       class="fa-heart"></i>
   </section>
   
+  <!-- Caraousel -->
   <Caraousel :images="images" />
+  
+  <PriceTitle 
+    title="New K Tuo" 
+    price="99.10" 
+    prefix="$" 
+    rating="4.5" 
+    review="15" />
 </template>
