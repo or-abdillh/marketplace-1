@@ -8,10 +8,14 @@
       type: Array
     }
   })
+  
+  const options = {
+    arrows: false
+  }
 </script>
 
 <template>
-  <Splide :options="{ rewind: true }">
+  <Splide :options="options">
     <!-- Loop images -->
     <template v-for="(img, index) in images" :key="index">
       <SplideSlide>
