@@ -5,6 +5,7 @@
   import PriceTitle from '@/components/PriceTitle.vue'
   import Section from '@/components/Section.vue'
   import Select from '@/components/Select.vue'
+  import CTA from '@/components/CTA.vue'
   
   //Instance
   const router = useRouter()
@@ -69,7 +70,10 @@
   <!-- Size -->
   <Section title="Size">
     <template v-slot:body>
-      <Select name="size" :options="options" />
+      <Select name="Choose the size" :options="options" />
     </template>
   </Section>
+  
+  <!-- Buy now -->
+  <CTA class="bg-yellow-600 text-gray-50 text-sm font-medium" text="Buy now" />
 </template>
