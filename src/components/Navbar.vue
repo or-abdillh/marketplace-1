@@ -27,7 +27,7 @@
 
 <template>
    <section class="fixed bg-white left-0 right-0 bottom-0 px-3 py-2  border">
-      <div class="w-full mx-auto flex justify-between">
+      <div class="w-full xl:w-3/12 lg:w-4/12 md:w-5/12 mx-auto flex justify-between">
          <template v-for="(nav, index) in navs" :key="index">
             <div
                @click="current = nav.label"
