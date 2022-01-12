@@ -29,7 +29,7 @@
 
 <template>
   <!-- Navigation and icons -->
-  <section class="flex w-full justify-between">
+  <section class="slide-animation flex w-full justify-between">
     <i @click="router.go(-1)" class="fa fa-arrow-left"></i>
     <i 
       @click="isHeartClicked = !isHeartClicked"
@@ -75,5 +75,5 @@
   </Section>
   
   <!-- Buy now -->
-  <CTA class="bg-yellow-600 text-gray-50 text-sm font-medium" text="Buy now" />
+  <CTA class="card-animation bg-yellow-600 text-gray-50 text-sm font-semibold" text="Buy now" />
 </template>

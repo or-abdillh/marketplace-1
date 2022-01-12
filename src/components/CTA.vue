@@ -11,7 +11,7 @@
 
 <template>
   
-  <button class="mt-5 mb-3 py-1 rounded w-full" type="button">
+  <button class="mt-5 mb-3 py-2 rounded w-full" type="button">
     {{ text }}
   </button>
   

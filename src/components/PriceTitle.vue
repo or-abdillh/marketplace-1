@@ -29,12 +29,12 @@
 <template>
   <section class="mt-3">
     <!-- Title, price -->
-    <div class="flex w-full justify-between">
+    <div class="slide-animation flex w-full justify-between">
       <h3 class="font-medium">{{ title }}</h3>
       <strong class="text-yellow-600">{{ prefix }}{{ price }}</strong>
     </div>
     <!-- Review , rating -->
-    <small class="font-medium text-yellow-600">
+    <small class="slide-animation font-medium text-yellow-600">
       <i class="text-xs fa fa-star"></i>
       {{ rating }} ( {{ review }} review )
     </small>
