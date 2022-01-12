@@ -10,6 +10,13 @@
   //Instance
   const router = useRouter()
   
+  //Back handler
+  const back = () => {
+    setTimeout(() => {
+      router.go(-1)
+    }, 500)
+  }
+  
   //Heart handler
   const isHeartClicked = ref(false)
   
@@ -30,7 +37,7 @@
 <template>
   <!-- Navigation and icons -->
   <section class="slide-animation flex w-full justify-between">
-    <i @click="router.go(-1)" class="fa fa-arrow-left"></i>
+    <i @click="back()" class="clicked duration-300 fa fa-arrow-left"></i>
     <i 
       @click="isHeartClicked = !isHeartClicked"
       :class="isHeartClicked ? 'fas' : 'far'" 
@@ -61,7 +68,7 @@
     <template v-slot:body>
       <div class="flex gap-2">
         <template v-for="(color, index) in colors" :key="index">
-          <div :class="color" class="rounded p-2 border border-gray-50 border-2"></div>
+          <div :class="color" class="clicked duration-300 rounded p-2 border border-gray-50 border-2"></div>
         </template>
       </div>
     </template>

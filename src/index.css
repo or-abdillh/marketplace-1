@@ -34,3 +34,8 @@
 .slide-animation {
   animation: Slide .5s ease-in-out forwards;
 }
+
+/* Clicked element */
+.clicked:active {
+  transform: scale(.65);
+}
