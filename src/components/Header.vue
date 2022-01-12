@@ -8,7 +8,7 @@
       
       <!-- Profile -->
       <span class="w-2/12 slide-animation">
-         <img class="rounded-full" src="female.jpg" alt="profile" />
+         <img class="rounded-full" src="/female.jpg" alt="profile" />
       </span>
    </section>
 </template>
