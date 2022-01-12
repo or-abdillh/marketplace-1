@@ -82,5 +82,5 @@
   </Section>
   
   <!-- Buy now -->
-  <CTA class="card-animation bg-yellow-600 text-gray-50 text-sm font-semibold" text="Buy now" />
+  <CTA class="card-animation text-gray-50 text-sm font-semibold" text="Buy now" />
 </template>
